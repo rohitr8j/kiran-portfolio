@@ -27,8 +27,16 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         {/* Logo */}
-        <a href={`#${links.navbar_links[0]}`} title="Kiran Meena">
-          <img src={images.logo} alt="Kiran Meena" />
+        <a href={`#${links.navbar_links[0]}`} title="Kiran Meena" style={{ textDecoration: "none" }}>
+          <div style={{
+            fontWeight: 800,
+            fontSize: "1.4rem",
+            letterSpacing: "0.05em",
+            color: "#313bac",
+            fontFamily: "sans-serif"
+          }}>
+            KM<span style={{ color: "#2d9cdb" }}>.</span>
+          </div>
         </a>
       </div>
       <ul className="app__navbar-links">
