@@ -100,7 +100,7 @@ const Footer = () => {
         {/* Phone */}
         <div className="app__footer-card">
           <img src={images.mobile} alt="Mobile" />
-          <a href={`tel:${links.contact_links.email}`} className="p-text">
+          <a href={`tel:${links.contact_links.phone}`} className="p-text">
             {links.contact_links.phone}
           </a>
         </div>
