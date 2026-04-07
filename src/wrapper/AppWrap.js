@@ -16,7 +16,7 @@ const AppWrap = (Component, idName, classNames) =>
           {/* Copyright */}
           <div className="copyright">
             <p className="p-text">
-              &copy; {new Date().getFullYear()} <span>MICAEL</span>
+              &copy; {new Date().getFullYear()} <span>KIRAN MEENA</span>
             </p>
             <p className="p-text">All rights reserved</p>
           </div>

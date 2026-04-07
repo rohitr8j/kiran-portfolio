@@ -27,8 +27,8 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         {/* Logo */}
-        <a href={`#${links.navbar_links[0]}`} title="Micael">
-          <img src={images.logo} alt="Micael" />
+        <a href={`#${links.navbar_links[0]}`} title="Kiran Meena">
+          <img src={images.logo} alt="Kiran Meena" />
         </a>
       </div>
       <ul className="app__navbar-links">

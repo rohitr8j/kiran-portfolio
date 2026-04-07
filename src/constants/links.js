@@ -1,5 +1,4 @@
-import { BsTwitter } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaBehance } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
 // Navbar links
@@ -14,26 +13,26 @@ const navbar_links = [
 
 // Contact links
 const contact_links = {
-  email: "contactme@micael.com",
-  phone: "+1 (123) 456-789",
+  email: "kiranmeena@gmail.com",
+  phone: "+91 XXXXXXXXXX",
 };
 
 // Social links
 const social_links = [
   {
-    name: "Twitter",
-    icon: <BsTwitter />,
-    url: "http://x.com/_sanidhyy",
+    name: "LinkedIn",
+    icon: <FaLinkedinIn />,
+    url: "https://www.linkedin.com/in/kiran-meena",
   },
   {
-    name: "Facebook",
-    icon: <FaFacebookF />,
-    url: "http://facebook.com",
+    name: "Behance",
+    icon: <FaBehance />,
+    url: "https://www.behance.net/kiran-meena",
   },
   {
     name: "Github",
     icon: <AiFillGithub />,
-    url: "http://github.com/sanidhyy",
+    url: "https://github.com/kiran-meena",
   },
 ];
 
