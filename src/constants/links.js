@@ -13,7 +13,7 @@ const navbar_links = [
 
 // Contact links
 const contact_links = {
-  email: "kiranmeena@gmail.com",
+  email: "km.uiuxdesignz@gmail.com",
   phone: "+91 XXXXXXXXXX",
 };
 
@@ -22,22 +22,22 @@ const social_links = [
   {
     name: "LinkedIn",
     icon: <FaLinkedinIn />,
-    url: "https://www.linkedin.com/in/kiran-meena",
+    url: "https://www.linkedin.com/in/kiran-meena-bb3528328",
   },
   {
     name: "Behance",
     icon: <FaBehance />,
-    url: "https://www.behance.net/kiran-meena",
+    url: "https://www.behance.net/kiranmeena8",
   },
   {
     name: "Github",
     icon: <AiFillGithub />,
-    url: "https://github.com/kiran-meena",
+    url: "https://github.com/rohitr8j/kiran-portfolio",
   },
 ];
 
 // Source code
-const source_code = "https://github.com/sanidhyy/portfolio-react";
+const source_code = "https://github.com/rohitr8j/kiran-portfolio";
 
 // links
 const links = {
