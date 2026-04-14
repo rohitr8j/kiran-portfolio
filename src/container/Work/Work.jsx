@@ -18,8 +18,11 @@ const Work = () => {
     const query = '*[_type == "works"]';
 
     client.fetch(query).then((data) => {
-      setWorks(data);
-      setFilterWork(data);
+      const safeData = Array.isArray(data) ? data : [];
+      setWorks(safeData);
+      setFilterWork(safeData);
+    }).catch((err) => {
+      console.error("Failed to fetch works:", err);
     });
   }, []);
 
@@ -34,7 +37,7 @@ const Work = () => {
       if (item === "All") {
         setFilterWork(works);
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        setFilterWork(works.filter((work) => Array.isArray(work.tags) && work.tags.includes(item)));
       }
     }, 500);
   };
@@ -73,7 +76,9 @@ const Work = () => {
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
               {/* work image */}
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              {work.imgUrl && urlFor(work.imgUrl) && (
+                <img src={urlFor(work.imgUrl)} alt={work.name} />
+              )}
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
@@ -118,7 +123,7 @@ const Work = () => {
 
               {/* work tags */}
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text">{work.tags?.[0]}</p>
               </div>
             </div>
           </div>
